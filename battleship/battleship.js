@@ -12,7 +12,7 @@ var isSunk = false;
 // Game logic
 
 while (isSunk == false){
-    guess = prompt("Ready!. Aimi. Fire! (enter number 0-6)");
+    guess = prompt("Ready!. Aimi. Fire! (enter numbe)");
     if (guess < 0 || guess > 6){
         alert("lease enter a valid cell number");
     }else {
@@ -26,11 +26,10 @@ while (isSunk == false){
                 
             }
         }
+        else alert("Miss!");
     }
 }
 
 var stats = "You sank my battleship at: " + guesses + "guesses" + "and your accuracy is:" + (3/guesses);
 
 alert(stats);
-
-alert("hit the location")
