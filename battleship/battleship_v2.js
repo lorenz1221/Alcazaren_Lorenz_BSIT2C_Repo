@@ -1,4 +1,4 @@
-console.log = Math.floor(Math.random () * 5);
+//declaring variable
 
 var randomLoc = Math.floor(Math.random() * 5);
 
@@ -6,7 +6,7 @@ var location1 = randomLoc;
 var location2 = location + 1;
 var location3 = location + 1; 
 
-var guess;
+var guess
 var hits = 0;
 var guesses = 0;
 
@@ -15,7 +15,7 @@ var isSunk = false;
 // Game logic
 
 while (isSunk == false){
-    guess = prompt("Ready!. Aimi. Fire! (Enter No.6 from 0-6");
+    guess = prompt("Ready!. Aim. Fire! (Enter No.6 from 0-6");
 
     if (guess == null) {
         alert("Thank you for playing!");
@@ -23,7 +23,7 @@ while (isSunk == false){
     }
 
     if (guess < 0 || guess > 6){
-        alert("lease enter a valid cell number");
+        alert("Please enter a valid cell number");
     }else {
         guesses = guesses + 1;
         alert("hits")
@@ -40,5 +40,9 @@ while (isSunk == false){
     }
 }
 var accuracy = (guesses > 0 ? (hits / guesses) * 100 : 0).toFixed(2);
+
 var stats = "You took " + guesses + " guesses to sink the battleship! " + "\n" + "Accuracy: " + accuracy + "%";
+
+var stats = "You sank my battleship at: " + guesses + "guesses" + "and your accuracy is: " + (3/guesses);
+
 alert(stats); 
