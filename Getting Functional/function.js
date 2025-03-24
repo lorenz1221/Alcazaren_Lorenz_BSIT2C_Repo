@@ -40,3 +40,5 @@ function bark(name, weight) {
 
 bark("Natoy", 21);
 bark("Ash", 15);
+bark("Bon", 19);
+bark("Barbara", 25);
